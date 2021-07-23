@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcf_chat", "wcf_chat\wcf_chat.csproj", "{EE2C1901-3DED-4130-8462-DA3BA124C576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatHost", "ChatHost\ChatHost.csproj", "{DACF6273-73D7-4B6C-8CAC-7618A245FEA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient\ChatClient.csproj", "{EA98C6DB-8366-43D1-A386-BC4101F5E2DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE2C1901-3DED-4130-8462-DA3BA124C576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2C1901-3DED-4130-8462-DA3BA124C576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2C1901-3DED-4130-8462-DA3BA124C576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2C1901-3DED-4130-8462-DA3BA124C576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF6273-73D7-4B6C-8CAC-7618A245FEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF6273-73D7-4B6C-8CAC-7618A245FEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF6273-73D7-4B6C-8CAC-7618A245FEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF6273-73D7-4B6C-8CAC-7618A245FEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA98C6DB-8366-43D1-A386-BC4101F5E2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA98C6DB-8366-43D1-A386-BC4101F5E2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA98C6DB-8366-43D1-A386-BC4101F5E2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA98C6DB-8366-43D1-A386-BC4101F5E2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5AA2B2-3D4C-45EB-8460-996BADEEE6D3}
+	EndGlobalSection
+EndGlobal
