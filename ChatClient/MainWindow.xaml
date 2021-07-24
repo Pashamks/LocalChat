@@ -6,11 +6,44 @@
         xmlns:local="clr-namespace:ChatClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="531.658" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
-    <Grid>
-        <Button x:Name="bConDiscon" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="30,29,0,0" VerticalAlignment="Top" Width="196" Height="39"/>
-        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="39" Margin="250,29,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="495"/>
-        <ListBox x:Name="lbChat" HorizontalAlignment="Left" Height="247" Margin="30,101,0,0" VerticalAlignment="Top" Width="715"/>
-        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Height="102" Margin="30,367,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="715" KeyDown="tbMessage_KeyDown"/>
+    <Window.Resources>
+        <Style x:Key="test" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="ButtonBorder" CornerRadius="10" BorderThickness="1" BorderBrush="Gray" Background="LightGray">
+                            <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="mainForm" >
+        <Button  x:Name="bConDiscon"  Style="{StaticResource test}" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="30,29,0,0" VerticalAlignment="Top" Width="196" Height="39"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="39" Margin="250,29,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="386"/>
+        <ListBox x:Name="lbChat"  HorizontalAlignment="Left" Height="247" Margin="30,101,0,0" VerticalAlignment="Top" Width="728"/>
+        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Height="102" Margin="30,367,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="626" KeyDown="tbMessage_KeyDown"/>
+        <Button x:Name="bSent" Style="{StaticResource test}"   HorizontalAlignment="Left" Margin="682,386,0,0" VerticalAlignment="Top" Width="76" Height="70" Click="bSent_Click">
+            <StackPanel>
+                <Image Source="/Resources/b_sent.png" Height="70" Width="74" />
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="bColor"   HorizontalAlignment="Left" Margin="682,19,0,0" VerticalAlignment="Top" Width="76" Height="44" Click="bColor_Click">
+            <StackPanel>
+                <Image x:Name="modeImg" Source="/Resources/White_mode.png" Height="41" Width="80" RenderTransformOrigin="0.5,0.5" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.454"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Window>

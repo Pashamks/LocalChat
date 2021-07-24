@@ -129,5 +129,12 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\b_sent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Black_mode.png" />
+    <Resource Include="Resources\White_mode.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,7 +21,7 @@ namespace ChatClient
     /// </summary>
     public partial class MainWindow : Window, IServiceChatCallback
     {
-        bool isConnected = false;
+        bool isConnected = false, mode = false;
         ServiceChatClient client;
         int ID;
         public MainWindow()
@@ -32,7 +32,7 @@ namespace ChatClient
         {
             if(!isConnected)
             {
-                client = new ServiceChatClient(new System.ServiceModel.InstanceContext(this));  
+                client = new ServiceChatClient(new System.ServiceModel.InstanceContext(this));
                 ID = client.Connect(tbUserName.Text);
                 tbUserName.IsEnabled = false;
                 bConDiscon.Content = "Disconnect";
@@ -66,10 +66,12 @@ namespace ChatClient
         public void MsgCallBack(string msg)
         {
             lbChat.Items.Add(msg);
+            lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count - 1]);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            bColor.Background = Brushes.White;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -85,6 +87,39 @@ namespace ChatClient
                 client.SentMsg(tbMessage.Text, ID);
                 tbMessage.Text = "";
             }
+        }
+
+        private void bSent_Click(object sender, RoutedEventArgs e)
+        {
+            if (client != null)
+                client.SentMsg(tbMessage.Text, ID);
+            tbMessage.Text = "";
+        }
+
+        private void bColor_Click(object sender, RoutedEventArgs e)
+        {
+            if(!mode)
+            {
+                mainForm.Background = Brushes.Black;
+                lbChat.Background = Brushes.Gray;
+                tbUserName.Background = Brushes.Gray;
+                tbMessage.Background = Brushes.Gray;
+
+                modeImg.Source = new BitmapImage(new Uri(@"/Resources/Black_mode.png", UriKind.RelativeOrAbsolute));
+                bColor.Background = Brushes.Black;
+                mode = true;
+            }
+            else
+            {
+                mainForm.Background = Brushes.White;
+                lbChat.Background = Brushes.White;
+                tbUserName.Background = Brushes.White;
+                tbMessage.Background = Brushes.White;
+                modeImg.Source = new BitmapImage(new Uri(@"/Resources/White_mode.png", UriKind.RelativeOrAbsolute));
+                bColor.Background = Brushes.White;
+                mode = false;
+            }
+            
         }
     }
 }
