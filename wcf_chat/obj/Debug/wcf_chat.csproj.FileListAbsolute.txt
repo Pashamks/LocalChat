@@ -1,4 +1,3 @@
-C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\obj\Debug\wcf_chat.csproj.AssemblyReference.cache
 C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\obj\Debug\wcf_chat.csproj.CoreCompileInputs.cache
 C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\bin\Debug\wcf_chat.dll.config
 C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\bin\Debug\wcf_chat.dll

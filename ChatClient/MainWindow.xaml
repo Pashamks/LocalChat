@@ -21,7 +21,7 @@
     </Window.Resources>
     <Grid x:Name="mainForm" >
         <Button  x:Name="bConDiscon"  Style="{StaticResource test}" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="30,29,0,0" VerticalAlignment="Top" Width="196" Height="39"/>
-        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="39" Margin="250,29,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="386"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="39" Margin="250,29,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="266"/>
         <ListBox x:Name="lbChat"  HorizontalAlignment="Left" Height="247" Margin="30,101,0,0" VerticalAlignment="Top" Width="728"/>
         <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Height="102" Margin="30,367,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="626" KeyDown="tbMessage_KeyDown"/>
         <Button x:Name="bSent" Style="{StaticResource test}"   HorizontalAlignment="Left" Margin="682,386,0,0" VerticalAlignment="Top" Width="76" Height="70" Click="bSent_Click">
@@ -44,6 +44,7 @@
                 </Image>
             </StackPanel>
         </Button>
+        <Button x:Name="bHistory" Style="{StaticResource test}" Content="History" HorizontalAlignment="Left" Margin="555,29,0,0" VerticalAlignment="Top" Width="101" Height="39" Click="bHistory_Click"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,6 @@
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\bin\Release\wcf_chat.dll.config
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\bin\Release\wcf_chat.dll
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\bin\Release\wcf_chat.pdb
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\obj\Release\wcf_chat.csproj.CoreCompileInputs.cache
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\obj\Release\wcf_chat.dll
+C:\Users\38095\Desktop\прога\wcf_chat\wcf_chat\obj\Release\wcf_chat.pdb
